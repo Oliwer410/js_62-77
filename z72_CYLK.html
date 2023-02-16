@@ -1,0 +1,36 @@
+<html>
+<head>
+ <meta charset="utf-8">
+<script language="JavaScript">
+	var x=prompt("podaj wysokosc a = ","");
+	var a_CYL=x;
+	var y=prompt("podaj szerokosc b = ","");
+	var b_CYL=y;
+		for ( var i=1; i<=b_CYL; i++)
+			{
+				document.write("*");
+			}
+				document.write("<br>");
+		var wiersz_CYL="*";
+		for ( var j=1; j<=(b_CYL-2); j++)
+			{
+				wiersz_CYL=wiersz_CYL+"&nbsp&nbsp";
+			}
+				wiersz_CYL=wiersz_CYL+"*";
+		for ( var j=1; j<=(a_CYL-2); j++)
+			{
+		document.write(wiersz_CYL);
+		document.write("<br>");
+			}
+
+
+
+		for ( var i=1; i<=b_CYL; i++)
+			{
+		document.write("*");
+			}
+	</script>
+	</head>
+<body>
+</body>
+</html>

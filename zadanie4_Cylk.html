@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="content-type" CONTENT="text/html"; CHARSET="utf-8">
+	</head>
+	<body>
+		<h2> Sposoby podłączania styli do strony (skrócone zestawienie). </h2>
+		<OL type=1 start=1>
+			<LI>
+				<h4><u>Zewnętrzny</u> arkusz stylów. </h4>
+				<FIELDSET>
+					&lthead&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltlink rel="Stylesheet" type="text/css" href="style.css" /&gt <br>
+					&lt/head&gt
+				</FIELDSET>
+			<LI>
+				<h4>Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony. </h4>
+				<FIELDSET>
+					&ltselektor style="cecha1: wartość1; cecha2: wartość2..."&gt...&lt/selektor&gt
+				</FIELDSET>
+			<LI>
+				<h4><u>Wewnętrzny</u> arkusz stylów. </h4>
+				<FIELDSET>
+					&lthead&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltstyle type="text/css"&gt <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp selektor1 { cecha: wartość; cecha2: wartość2... } <br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp selektor2 { cecha: wartość; cecha2: wartość2... } <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt/style&gt <br>
+					&lt/head&gt <br>
+				</FIELDSET>
+			<LI>
+				<h4><u>Alternatywny</u> arkusz stylów. </h4>
+				<FIELDSET>
+					&lthead&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltlink rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltlink rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltlink rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt <br>
+					&lt/head&gt
+				</FIELDSET>
+			<LI>
+				<h4><u>Import</u> arkusza stylów.. </h4>
+				<FIELDSET>
+					&ltstyle type="text/css"&gt <br>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @import url(adres zewnętrznego arkusza stylów); <br>
+					&lt/style&gt
+				</FIELDSET>
+		</OL>
+	</body>
+</html>

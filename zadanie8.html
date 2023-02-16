@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>styl importowany kod</title>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+		<style>
+			OL{
+				font-family: arial;
+				}
+		</style>
+	</head>
+	<body>
+		<OL TYPE=1 START=1>
+			<LI> <h1>Gdzie jest wstawiany,</h1>
+			<p> <u> Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami &lthead&gt a &lt/head&gt)</u>. Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż domyślne). </p>
+			<LI> <h1>Składnia teoretyczna</h1>
+			<fieldset>
+			&lthead&gt <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (...) <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &ltstyle type="text/css"&gt <br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/* &lt![CDATA[ */ <br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp selektor1 { cecha: wartość; cecha2: wartość2... } <br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp selektor2 { cecha: wartość; cecha2: wartość2... } <br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (...) <br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp /* ]]&gt */ <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt/style&gt <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (...) <br>
+			&lt/head&gt
+			</fieldset>
+			<LI> <h1>Jakie mogą być selektory,</h1>
+			<p> <b> Selektorem </b> może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi znacznikami, nadajemy atrybuty formatowania opisane w arkuszu. </p>
+			<LI> <h1>Jakie mogą być cechy i wartości.</h1>
+			<p> Jako <b> "cecha" </b> (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (opisane w kolejnych rozdziałach).
+				Natomiast jako wyraz <b> "wartość" </b> wpisujemy dokładną wartość atrybutu.
+				Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami. </p>
+		</OL>
+	</body>
+</html>
